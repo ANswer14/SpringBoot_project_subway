@@ -4,6 +4,7 @@
 ![image](https://github.com/user-attachments/assets/8a6ea5d3-c63c-4502-8d1c-ca1850dbdc30)
 
 
+
 ![image](https://github.com/user-attachments/assets/9c4faf90-a7be-4650-ac80-5eef8d8783e2)
 
 -------------------------------------------------------------------------------------------------------------------------------
@@ -27,4 +28,7 @@
   - templates : 동적인 컨텐츠를 담는 폴더(View를 담음) / user폴더 이외에도 카테고리 별로 폴더를 만들어서 사용할 것
     - user : 유저와 관련된 View를 담는 폴더
     
+![image](https://github.com/user-attachments/assets/919b61eb-78ce-4fb1-8e7c-476c0700375c)
+
+- sql : sql문을 담는 폴더(임시)
 
