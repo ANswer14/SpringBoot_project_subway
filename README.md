@@ -32,3 +32,16 @@
 
 - sql : sql문을 담는 폴더(임시)
 
+![image](https://github.com/user-attachments/assets/799dfea4-5bf8-4ca8-b4be-6a6dbc893682)
+
+- application.properties : 애플리케이션 설정 파일 기본 설정은 위와 같음 설정 추가 시 insert to below 아래로 넣을 것
+  - username : DB 사용자 이름(default값은 root)
+  - password : DB 사용자 비밀번호
+  - 나머지 설정은 아래와 같이 할 것(DB 연동 오류 시)
+  1. MySQL 워크벤치를 켠다
+  2. MySQL의 SQL File을 연 후 아래와 같이 작성한다.
+  3. ![image](https://github.com/user-attachments/assets/9decdc91-404b-4fec-8c50-7cb27bd971ff)
+  4. 실행하면 연동 끝
+
+
+
