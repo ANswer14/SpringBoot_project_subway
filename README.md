@@ -43,5 +43,9 @@
   3. ![image](https://github.com/user-attachments/assets/9decdc91-404b-4fec-8c50-7cb27bd971ff)
   4. 실행하면 연동 끝
 
+- build.gradle : 라이브러리 관리 툴로 라이브러리가 여기에 저장된다
+  - ![image](https://github.com/user-attachments/assets/9832b2a3-fa61-4243-adb0-042161c10407)
+  - 새로운 의존성 추가 시 주석 밑으로 추가 할 것!
+
 
 
