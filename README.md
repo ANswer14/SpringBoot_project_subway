@@ -1,3 +1,13 @@
+
+  - 기본 프로젝트 구조
+  
+![image](https://github.com/user-attachments/assets/8a6ea5d3-c63c-4502-8d1c-ca1850dbdc30)
+
+
+![image](https://github.com/user-attachments/assets/9c4faf90-a7be-4650-ac80-5eef8d8783e2)
+
+-------------------------------------------------------------------------------------------------------------------------------
+
 ![image](https://github.com/user-attachments/assets/8578a642-22ce-4797-b363-ad623fbe167c)
 - java
   - config : 환경 설정 파일을 모아두는 폴더(이름은 ~~~Config로 할 것 / 첫 글자는 대문자)
