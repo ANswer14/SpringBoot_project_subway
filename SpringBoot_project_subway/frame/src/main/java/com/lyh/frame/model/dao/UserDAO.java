@@ -4,6 +4,7 @@ import com.lyh.frame.model.dto.User;
 import com.lyh.frame.model.dto.UserRegisterForm;
 import com.lyh.frame.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -15,11 +16,14 @@ import java.util.Set;
 public class UserDAO {
 
     private final UserRepository USERREPOSITORY;
+    private final BCryptPasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserDAO(UserRepository USERREPOSITORY) {
+    public UserDAO(UserRepository USERREPOSITORY, BCryptPasswordEncoder passwordEncoder) {
         this.USERREPOSITORY = USERREPOSITORY;
+        this.passwordEncoder = passwordEncoder;
     }
+
 
     public void register(UserRegisterForm user) {
         Set<String> set = new HashSet<>();
@@ -29,8 +33,9 @@ public class UserDAO {
         registerUser.setUserId(user.getUserId());
         registerUser.setUserEmail(user.getUserEmail());
         registerUser.setUserRole(set);
-        registerUser.setPassword(user.getPassword());
+        registerUser.setPassword(passwordEncoder.encode(user.getPassword()));
         registerUser.setUserImgPath(user.getUserImgPath());
+        registerUser.setNickname(user.getNickname());
         USERREPOSITORY.save(registerUser);
     }
 
