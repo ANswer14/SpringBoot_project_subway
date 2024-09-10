@@ -1,15 +1,28 @@
-create schema `spring` default character set utf8mb4
-    default collate utf8mb4_general_ci;
-use spring;
-# 스키마 생성
-
-
-# 유저 테이블 생성
-create table USER_TB(
-    userID varchar(25),
-    password varchar(25) not null,
-    nickname varchar(25) not null unique ,
-    userImgPath TEXT not null,
-    primary key (userID)
+-- auto-generated definition
+create table USER
+(
+    userID      varchar(15) not null
+        primary key,
+    password    varchar(20) not null,
+    nickname    varchar(10) not null,
+    userImgPath text        not null,
+    userEmail   varchar(50) not null,
+    userRole    varchar(5)  not null
 );
+
+-- auto-generated definition
+create table board
+(
+    boardNO   bigint auto_increment
+        primary key,
+    userID    varchar(15) not null,
+    boardText text        not null,
+#     board_ibfk_1 : 외래키 제약조건 명
+    constraint board_ibfk_1
+        foreign key (userID) references user (userID)
+
+);
+
+create index userID
+    on board (userID);
 
