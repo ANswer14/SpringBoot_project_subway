@@ -1,4 +1,9 @@
+ - 프로젝트 가져와서 실행이 안된다?
+1. build.gradle을 들어가서 프로젝트 빌드 하기
+2. DB 관련 이슈가 뜬다면 아래 DB 생성하는거 따라하기
+3. 끝
 
+------------------------------------------------------------------------------------------------------------------------------
   - 기본 프로젝트 구조
   
 ![image](https://github.com/user-attachments/assets/8a6ea5d3-c63c-4502-8d1c-ca1850dbdc30)
@@ -40,7 +45,10 @@
   - 나머지 설정은 아래와 같이 할 것(DB 연동 오류 시)
   1. MySQL 워크벤치를 켠다
   2. MySQL의 SQL File을 연 후 아래와 같이 작성한다.
-  3. ![image](https://github.com/user-attachments/assets/9decdc91-404b-4fec-8c50-7cb27bd971ff)
+  3. ![image](https://github.com/user-attachments/assets/5a7de5c9-0beb-42be-b5a5-65e0f00b19ac)
+  => create schema `METROFLOW_DB` default character set utf8mb4
+	default collate utf8mb4_general_ci;
+use `METROFLOW_DB`;
   4. 실행하면 연동 끝
 
 - build.gradle : 라이브러리 관리 툴로 라이브러리가 여기에 저장된다
