@@ -25,7 +25,7 @@ public class User {
     private String userEmail;
     @ElementCollection
     @CollectionTable(name = "user_role",
-            joinColumns = @JoinColumn(name = "user_id")
+            joinColumns = @JoinColumn(name = "userId", nullable = false)
     )
     @Column(length = 5)
     private Set<String> userRole;
