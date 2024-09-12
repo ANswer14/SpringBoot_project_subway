@@ -2,18 +2,15 @@ package com.lyh.frame.model.service;
 
 import com.lyh.frame.model.dto.UserRegisterForm;
 import com.lyh.frame.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 
+@RequiredArgsConstructor
 @Service
 public class UserService {
     private final UserRepository USERREPOSITORY;
-
-    @Autowired
-    public UserService(UserRepository USERREPOSITORY) {
-        this.USERREPOSITORY = USERREPOSITORY;
-    }
 
     // ID 중복 체크
     public void idDuplicationCheck(UserRegisterForm user, BindingResult result) {

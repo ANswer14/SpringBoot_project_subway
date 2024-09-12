@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
@@ -18,14 +19,14 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
 //                        필요할 시 아래 경로 바꿀 것
-                                .requestMatchers("/","/css/**", "/images/**","/js/**", "/home", "/login", "/register", "/goRegister").permitAll()
+                                .requestMatchers("/","/css/**", "/images/**","/js/**","/test", "/home", "/login", "/register", "/goRegister").permitAll()
 //                                .requestMatchers("/user-list").hasAuthority("admin")
-//                        .requestMatchers("/user/**").hasRole("user")
+                        .requestMatchers("/user/**").hasAuthority("user")
                                 .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin
                                 .loginPage("/login")
-                                .usernameParameter("username")
+                                .usernameParameter("userId")
                                 .passwordParameter("password")
                                 .permitAll()
 //                        .loginProcessingUrl("/")
@@ -53,7 +54,6 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-//    public void configure(WebSecurity web) throws Exception {
-//        web.ignoring().requestMatchers(PathRequest.toStaticResources().atCommonLocations());
-//    }
+
+
 }

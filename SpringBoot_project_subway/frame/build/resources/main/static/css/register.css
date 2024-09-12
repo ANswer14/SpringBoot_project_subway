@@ -139,6 +139,16 @@ h2 {
   cursor: pointer;
 }
 
+.registerButtonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.errorClass {
+  color: red;
+  font-weight: lighter;
+}
+
 .btn-container {
   text-align: center;
 }
@@ -146,8 +156,7 @@ h2 {
 .input-small {
   max-width: 450px;
   width: 85%;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
 }
 
 .rounded-circle {

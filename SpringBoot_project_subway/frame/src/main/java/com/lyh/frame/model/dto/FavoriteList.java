@@ -8,6 +8,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(name = "favoritelist")
 public class FavoriteList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -10,9 +10,14 @@ import lombok.Setter;
 @Table(name = "Time")
 public class SubwayTime {
     @Id
+    @Column(name = "typeId")
+    private long typeId;
+
+    @MapsId
     @OneToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "typeId", referencedColumnName = "typeId")
     private SubwayType subwayType;
+
     @Column(length = 3)
     private String h0530;
     @Column(length = 3)
