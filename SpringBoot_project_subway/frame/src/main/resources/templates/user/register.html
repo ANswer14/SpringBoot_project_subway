@@ -15,7 +15,7 @@
     <div class="card">
         <div class="text-center">
             <h2 class="fw-bold">회원 가입</h2>
-            <img id="selectedProfile" th:src="@{/img/img_4.png}" class="rounded-circle mb-3" alt="선택된 프로필 사진" onclick="showModal()">
+            <img id="selectedProfile" src="/images/img_4.png" class="rounded-circle mb-3" alt="선택된 프로필 사진" onclick="showModal()">
             <p><small>프로필 사진을 클릭하여 이미지를 선택하세요.</small></p>
         </div>
 
@@ -52,7 +52,7 @@
         </form>
     </div>
 </div>
-
+<img src="/images/img_4.png">
 <!-- 이미지는 DB에서 따올 예정 -->
 <div class="modal" id="imageModal">
     <div class="modal-content">
@@ -62,7 +62,7 @@
         </div>
         <div class="modal-body">
             <div id="imageSelection">
-                <img th:src="@{/img/img_4.png}" class="profile-img" alt="프로필 4" onclick="selectImage(this)">
+                <img src="/images/img_4.png" class="profile-img" alt="프로필 4" onclick="selectImage(this)">
             </div>
         </div>
     </div>
