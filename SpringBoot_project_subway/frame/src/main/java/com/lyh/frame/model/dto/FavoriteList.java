@@ -11,7 +11,7 @@ import lombok.Setter;
 public class FavoriteList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long boardNo;
+    private long myfavNo;
     @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "userId", referencedColumnName = "userId", nullable = false)
     private User user;
