@@ -21,17 +21,17 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
 //                        필요할 시 아래 경로 바꿀 것
                                 .requestMatchers("/","/favicon.ico","/css/**", "/images/**","/js/**","/test", "/home", "/login", "/register", "/goRegister", "/goLogin").permitAll()
-//                                .requestMatchers("/user-list").hasAuthority("admin")
+                                .requestMatchers("/logout").hasAuthority("user")
 //                        .requestMatchers("/user/**").hasRole("user")
                                 .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin
                                 .loginPage("/login")
-                                .usernameParameter("userId")
-                                .passwordParameter("password")
+//                                .usernameParameter("userId")
+//                                .passwordParameter("password")
                                 .permitAll()
 //                        .loginProcessingUrl("/")
-                                .defaultSuccessUrl("/home")
+                                .defaultSuccessUrl("/home", true)
                 )
                 .logout(logout -> logout
                         .permitAll()

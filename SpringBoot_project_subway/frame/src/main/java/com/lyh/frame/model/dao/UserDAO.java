@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
@@ -20,7 +21,7 @@ public class UserDAO {
     private final UserRepository USERREPOSITORY;
     private final BCryptPasswordEncoder passwordEncoder;
 
-
+    @Transactional
     public void register(UserRegisterForm user, String imagePath) {
         Set<String> set = new HashSet<>();
         set.add("user");

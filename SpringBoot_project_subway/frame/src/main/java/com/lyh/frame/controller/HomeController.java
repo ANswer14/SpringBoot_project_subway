@@ -9,4 +9,9 @@ public class HomeController {
     public String goHome() {
         return "home";
     }
+
+    @GetMapping("/home")
+    public String home() {
+        return "home";
+    }
 }

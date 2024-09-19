@@ -4,20 +4,41 @@ const disableSpacebar = (event) => {
     }
 };
 
-// const disableKorean = (event) => {
-//     const re = new RegExp("")
-//     if (event.code)
-// };
+const disableKorean = (event) => {
+    const value = event.target.value;
+    if (/[\u3131-\uD79D]/.test(value)) {
+        // 한글이 포함되어 있다면 제거
+        event.target.value = value.replace(/[\u3131-\uD79D]/g, '');
+    }
+};
 
-window.onload = () => {
+window.addEventListener('load', function () {
     const inputFields = document.getElementsByTagName("input");
     Array.from(inputFields).forEach(input => {
+        console.log(input)
         input.addEventListener('keydown', disableSpacebar);
     });
-    // Array.from(inputFields).forEach(input => {
-    //     input.addEventListener('keypress', disableKorean);
-    // });
-};
+});
+
+window.addEventListener('load', function () {
+    const inputFields = document.getElementsByTagName("input");
+    const nickname = document.getElementById('nickname');
+    Array.from(inputFields).forEach(input => {
+        if (nickname === input) {
+            return;
+        }
+        input.addEventListener('input', disableKorean);
+    });
+});
+
+// window.onload = () => {
+//     Array.from(inputFields).forEach(input => {
+//         input.addEventListener('keydown', disableSpacebar);
+//         input.addEventListener('keypress', disableKorean);
+//     });
+//     // Array.from(inputFields).forEach(input => {
+//     // });
+// };
 
 
 let selectedImage = null;

@@ -7,7 +7,6 @@ import com.lyh.frame.model.service.UserService;
 import com.lyh.frame.repository.UserRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -31,7 +30,7 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public String Register(@Valid @ModelAttribute("user")UserRegisterForm user, BindingResult result,
+    public String register(@Valid @ModelAttribute("user")UserRegisterForm user, BindingResult result,
                            @RequestParam("imagePath") String imagePath) {
         USERSERVICE.idDuplicationCheck(user, result);
         USERSERVICE.passwordCheck(user, result);
@@ -43,10 +42,9 @@ public class UserController {
         return "home";
     }
 
-    @GetMapping("/goLogin")
-    public String goLoginPage(Model model) {
-        model.addAttribute("login", new UserLoginForm());
-        return "login/login";
+    @GetMapping("/login")
+    public String goLoginPage() {
+        return "user/login";
     }
 
 
