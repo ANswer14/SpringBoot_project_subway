@@ -1,7 +1,7 @@
 package com.lyh.frame.controller;
 
 import com.lyh.frame.model.dao.UserDAO;
-import com.lyh.frame.model.dto.User;
+import com.lyh.frame.model.dto.UserLoginForm;
 import com.lyh.frame.model.dto.UserRegisterForm;
 import com.lyh.frame.model.service.UserService;
 import jakarta.validation.Valid;
@@ -12,7 +12,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class UserController {
@@ -43,4 +42,12 @@ public class UserController {
         USERDAO.register(user);
         return "home";
     }
+
+    @GetMapping("/goLogin")
+    public String goLoginPage(Model model) {
+        model.addAttribute("login", new UserLoginForm());
+        return "login/login";
+    }
+
+
 }
