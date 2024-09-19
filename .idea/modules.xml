@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot_project_subway.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot_project_subway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.lyh.frame.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.lyh.frame.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/frame.main.iml" filepath="$PROJECT_DIR$/.idea/modules/frame.main.iml" />
     </modules>
   </component>

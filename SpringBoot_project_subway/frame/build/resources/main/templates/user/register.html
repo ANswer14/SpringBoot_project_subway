@@ -6,9 +6,39 @@
     <title>회원가입</title>
     <link href="css/register.css" rel="stylesheet" type="text/css">
     <link th:href="@{/css/register.css}" rel="stylesheet" type="text/css">
+    <style>
+        #custom-navbar {
+            background-color: #001f3f !important;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: white !important;
+        }
+
+        .container-fluid {
+            background-color: #002f5f;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .login, .register {
+            color: white !important;
+            margin-left: 10px;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+    </style>
 </head>
 <body>
 
+<div th:insert="~{fragments/menu :: menuBar}"></div>
 
 <!-- 회원가입 폼 -->
 <div class="form-container">

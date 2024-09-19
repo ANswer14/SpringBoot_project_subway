@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2e803a93-5a32-4bc2-a6ca-993b5fdb8034" name="변경" comment="zxcvzxcv">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.lyh.frame.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/frame.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/frame.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/classes/java/main/com/lyh/frame/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/classes/java/main/com/lyh/frame/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/user/register.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/SpringBoot_project_subway/frame">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/SpringBoot_project_subway/frame">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="frame" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="frame" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="frame" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature-registerPage-0909" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;taehoon-200&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ANswer14/SpringBoot_project_subway.git&quot;,
+    &quot;accountId&quot;: &quot;c8f071bb-d6c0-4253-8f8e-2b17629408f4&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2lrnJZW6IsD5Rg0Ud1TFkGCSdvW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Gradle.frame 빌드.executor": "Run",
+    "JavaScript 디버그.header.html.executor": "Run",
+    "JavaScript 디버그.home.html.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.FrameApplication.executor": "Run",
+    "git-widget-placeholder": "feature-mainPage-0911",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sdedu/Desktop/git/practice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle",
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates" />
+      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates\fragments" />
+      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="FrameApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="com.lyh.frame.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lyh.frame.FrameApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="2e803a93-5a32-4bc2-a6ca-993b5fdb8034" name="변경" comment="" />
+      <created>1725946993639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725946993639</updated>
+      <workItem from="1725946994768" duration="1362000" />
+      <workItem from="1725948395316" duration="31000" />
+      <workItem from="1725948684889" duration="8185000" />
+      <workItem from="1726012288559" duration="21306000" />
+      <workItem from="1726100088772" duration="21123000" />
+      <workItem from="1726702363184" duration="10700000" />
+    </task>
+    <task id="LOCAL-00001" summary="zxcvzxcv">
+      <option name="closed" value="true" />
+      <created>1726016180441</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726016180441</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="zxcvzxcv" />
+    <option name="LAST_COMMIT_MESSAGE" value="zxcvzxcv" />
+  </component>
+</project>
