@@ -15,15 +15,14 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorize -> authorize
 //                        필요할 시 아래 경로 바꿀 것
-                                .requestMatchers("/","/favicon.ico","/css/**", "/images/**","/js/**","/test", "/home", "/login", "/register", "/goRegister").permitAll()
+                                .requestMatchers("/","/favicon.ico","/css/**", "/images/**","/js/**","/test", "/home", "/login", "/register", "/goRegister", "/goLogin").permitAll()
 //                                .requestMatchers("/user-list").hasAuthority("admin")
-                        .requestMatchers("/user/**").hasAuthority("user")
+//                        .requestMatchers("/user/**").hasRole("user")
                                 .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin

@@ -1,7 +1,7 @@
 package com.lyh.frame.controller;
 
 import com.lyh.frame.model.dao.UserDAO;
-import com.lyh.frame.model.dto.User;
+import com.lyh.frame.model.dto.UserLoginForm;
 import com.lyh.frame.model.dto.UserRegisterForm;
 import com.lyh.frame.model.service.UserService;
 import com.lyh.frame.repository.UserRepository;
@@ -42,5 +42,12 @@ public class UserController {
         USERDAO.register(user, imagePath);
         return "home";
     }
+
+    @GetMapping("/goLogin")
+    public String goLoginPage(Model model) {
+        model.addAttribute("login", new UserLoginForm());
+        return "login/login";
+    }
+
 
 }
