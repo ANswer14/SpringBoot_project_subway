@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -14,12 +15,13 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(authorize -> authorize
 //                        필요할 시 아래 경로 바꿀 것
-                                .requestMatchers("/","/css/**", "/images/**","/js/**","/test", "/home", "/login", "/register", "/goRegister").permitAll()
+                                .requestMatchers("/","/favicon.ico","/css/**", "/images/**","/js/**","/test", "/home", "/login", "/register", "/goRegister").permitAll()
 //                                .requestMatchers("/user-list").hasAuthority("admin")
                         .requestMatchers("/user/**").hasAuthority("user")
                                 .anyRequest().authenticated()

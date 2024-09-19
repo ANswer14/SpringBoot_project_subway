@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lyh.frame.Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-12T03:19:35" hostname="DESKTOP-KATLOLM" time="2.299">
+  <properties/>
+  <testcase name="셀렉테스트()" classname="com.lyh.frame.Test" time="2.299"/>
+  <system-out><![CDATA[12:19:25.641 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.lyh.frame.Test]: Test does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:19:25.894 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.lyh.frame.FrameApplication for test class com.lyh.frame.Test
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2024-09-12T12:19:26.514+09:00  INFO 1840 --- [frame] [    Test worker] com.lyh.frame.Test                       : Starting Test using Java 17.0.12 with PID 1840 (started by sdedu in C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame)
+2024-09-12T12:19:26.516+09:00  INFO 1840 --- [frame] [    Test worker] com.lyh.frame.Test                       : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T12:19:27.922+09:00  INFO 1840 --- [frame] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T12:19:28.025+09:00  INFO 1840 --- [frame] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 6 JPA repository interfaces.
+2024-09-12T12:19:28.938+09:00  INFO 1840 --- [frame] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T12:19:29.043+09:00  INFO 1840 --- [frame] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T12:19:29.102+09:00  INFO 1840 --- [frame] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T12:19:30.012+09:00  INFO 1840 --- [frame] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T12:19:30.097+09:00  INFO 1840 --- [frame] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T12:19:30.600+09:00  INFO 1840 --- [frame] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bbd76b8
+2024-09-12T12:19:30.606+09:00  INFO 1840 --- [frame] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T12:19:32.966+09:00  INFO 1840 --- [frame] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T12:19:33.103+09:00  INFO 1840 --- [frame] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T12:19:33.669+09:00  WARN 1840 --- [frame] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T12:19:33.752+09:00  WARN 1840 --- [frame] [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 50540a2c-6d57-4d58-9e87-524e8e6093c9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-09-12T12:19:33.800+09:00  INFO 1840 --- [frame] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-09-12T12:19:35.906+09:00  INFO 1840 --- [frame] [    Test worker] com.lyh.frame.Test                       : Started Test in 9.762 seconds (process running for 11.776)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
