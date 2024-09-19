@@ -173,7 +173,7 @@
       <workItem from="1726015181484" duration="6224000" />
       <workItem from="1726034941828" duration="8867000" />
       <workItem from="1726098823453" duration="26223000" />
-      <workItem from="1726703117387" duration="10816000" />
+      <workItem from="1726703117387" duration="11502000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT, REAFACTOR 회원가입 기능뼈대&#10;&#10;- application.properties &#10;- DB명 METROFLOW_DB로 통일&#10;- 서버 포트 8081로 바꿈&#10;&#10;- ddl.sql&#10;- User테이블 / Board테이블 DDL 명시&#10;&#10;- HomeController &#10;- 임의로 홈을 만듬(view) 삭제해도 됨&#10;&#10;- img_4.png 회원가입 시 기본 이미지&#10;&#10;- register.html / register.css&#10;- 회원가입 시 html / css&#10;&#10;- SecurityConfig&#10;- SpringSecurity 설정 파일&#10;- 추후 변경될 가능성 많음&#10;&#10;- User&#10;- 유저 테이블을 매핑하는 엔티티&#10;- 유저의 Role을 갖는 테이블을 외래키를 통한 테이블로 새로 생성(userRole)&#10;&#10;- UserController&#10;- register 페이지로 가는 컨트롤러 생성(goRegisterPage)&#10;- 회원가입 시 진행되는 컨트롤러 생성(Register)&#10;&#10;- UserDAO&#10;- 유저DAO 메소드 생성&#10;- 회원가입 기능 생성&#10;&#10;- UserRegisterForm&#10;- 회원가입용 유저 form 생성&#10;- been validation 적용&#10;&#10;- UserRepository&#10;- 유저 관련 리포지터리(인터페이스) 작성&#10;- findByUserId : 유저의 id로 계정 찾기(Optional) &#10;- findByNickname : 유저의 nickname으로 계정 찾기(Optional)&#10;&#10;- UserService&#10;- 유저 관련 비즈니스 로직 제공&#10;- idDuplicationCheck : 회원가입 시 유저 id 중복 체크&#10;- passwordCheck : 회원가입 시 유저 password가 passwordCheck와 다른지 체크&#10;- nicknameDuplicationCheck : 회원가입 시 유저 닉네임이 중복되는지 체크">
       <option name="closed" value="true" />

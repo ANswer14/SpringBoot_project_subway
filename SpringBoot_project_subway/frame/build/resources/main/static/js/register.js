@@ -4,18 +4,19 @@ const disableSpacebar = (event) => {
     }
 };
 
-const disableKorean = (event) => {
-    if (event.)
-};
+// const disableKorean = (event) => {
+//     const re = new RegExp("")
+//     if (event.code)
+// };
 
 window.onload = () => {
     const inputFields = document.getElementsByTagName("input");
     Array.from(inputFields).forEach(input => {
         input.addEventListener('keydown', disableSpacebar);
     });
-    Array.from(inputFields).forEach(input => {
-        input.addEventListener('keydown', disableKorean);
-    });
+    // Array.from(inputFields).forEach(input => {
+    //     input.addEventListener('keypress', disableKorean);
+    // });
 };
 
 
