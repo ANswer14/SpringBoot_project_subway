@@ -4,130 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link href="css/register.css" rel="stylesheet" type="text/css">
-    <link th:href="@{/css/register.css}" rel="stylesheet" type="text/css">
-    <style>
-        #custom-navbar {
-            background-color: #001f3f !important;
-        }
-
-        .navbar-nav .nav-item .nav-link {
-            color: white !important;
-        }
-
-        .container-fluid {
-            background-color: #002f5f;
-        }
-
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-
-        .login, .register {
-            color: white !important;
-            margin-left: 10px;
-        }
-
-        .navbar-nav .nav-item {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-    </style>
+    <link href="/css/register.css" rel="stylesheet">
+<!--    <link rel = "icon" href="data:,">-->
+    <script type="text/javascript" src="/js/register.js"></script>
 </head>
 <body>
 
-<div th:insert="~{fragments/menu :: menuBar}"></div>
 
 <!-- 회원가입 폼 -->
 <div class="form-container">
     <div class="card">
         <div class="text-center">
             <h2 class="fw-bold">회원 가입</h2>
-            <img id="selectedProfile" th:src="@{/img/img_4.png}" class="rounded-circle mb-3" alt="선택된 프로필 사진" onclick="showModal()">
+            <img id="selectedProfile" src="/images/img_4.png" class="rounded-circle mb-3" alt="선택된 프로필 사진" onclick="showModal()">
             <p><small>프로필 사진을 클릭하여 이미지를 선택하세요.</small></p>
         </div>
 
         <form th:action="@{/register}" method="post">
             <div class="registerInput">
-                <input th:type="text" class="form-control input-small" th:field="${user.userId}" placeholder="ID 입력">
-                <p th:if="${#fields.hasErrors('user.userId')}" th:errors="${user.userId}"></p>
+                <input th:type="text" class="form-control input-small" th:field="${user.userId}" id="id" placeholder="ID 입력">
+                <p th:if="${#fields.hasErrors('user.userId')}" th:errors="${user.userId}" th:errorclass="errorClass"></p>
                 <p th:if="!${#fields.hasErrors('user.userId')}"></p>
             </div>
             <div class="registerInput">
-                <input th:type="text" class="form-control input-small" th:field="${user.nickname}" placeholder="닉네임 입력">
-                <p th:if="${#fields.hasErrors('user.nickname')}" th:errors="${user.nickname}"></p>
+                <input th:type="text" class="form-control input-small" th:field="${user.nickname}" id="nickname" placeholder="닉네임 입력">
+                <p th:if="${#fields.hasErrors('user.nickname')}" th:errors="${user.nickname}" th:errorclass="errorClass"></p>
                 <p th:if="!${#fields.hasErrors('user.nickname')}"></p>
             </div>
             <div class="registerInput">
-                <input th:type="text" class="form-control input-small" th:field="${user.userEmail}" placeholder="이메일 입력">
-                <p th:if="${#fields.hasErrors('user.userEmail')}" th:errors="${user.userEmail}"></p>
+                <input th:type="text" class="form-control input-small" th:field="${user.userEmail}" id="email" placeholder="이메일 입력">
+                <p th:if="${#fields.hasErrors('user.userEmail')}" th:errors="${user.userEmail}" th:errorclass="errorClass"></p>
                 <p th:if="!${#fields.hasErrors('user.userEmail')}"></p>
             </div>
             <div class="registerInput">
-                <input th:type="password" class="form-control input-small" th:field="${user.password}" placeholder="비밀번호 입력">
-                <p th:if="${#fields.hasErrors('user.password')}" th:errors="${user.password}"></p>
+                <input th:type="password" class="form-control input-small" th:field="${user.password}" id="password" placeholder="비밀번호 입력">
+                <p th:if="${#fields.hasErrors('user.password')}" th:errors="${user.password}" th:errorclass="errorClass"></p>
                 <p th:if="!${#fields.hasErrors('user.password')}"></p>
             </div>
             <div class="registerInput">
-                <input th:type="password" class="form-control input-small" th:field="${user.passwordCheck}" placeholder="비밀번호 확인">
-                <p th:if="${#fields.hasErrors('user.passwordCheck')}" th:errors="${user.passwordCheck}"></p>
+                <input th:type="password" class="form-control input-small" th:field="${user.passwordCheck}" id="passwordCheck" placeholder="비밀번호 확인">
+                <p th:if="${#fields.hasErrors('user.passwordCheck')}" th:errors="${user.passwordCheck}" th:errorclass="errorClass"></p>
                 <p th:if="!${#fields.hasErrors('user.passwordCheck')}"></p>
             </div>
-            <input type="hidden" id="imagePath" th:field="${user.userImgPath}" name="imagePath">
-            <div class="d-flex justify-content-center">
+            <div>
+                <input type="hidden" id="imagePath" name="imagePath">
+            </div>
+            <div class="registerButtonDiv">
                 <button type="submit" class="btn btn-navy w-50" id=" registerBtn">회원가입</button>
             </div>
         </form>
     </div>
 </div>
-
 <!-- 이미지는 DB에서 따올 예정 -->
 <div class="modal" id="imageModal">
     <div class="modal-content">
         <div class="modal-header">
             <h5>프로필 사진 선택</h5>
-            <button class="close-btn" onclick="hideModal()">X</button>
+            <button class="close-btn" onclick="hideModal()" type="button">X</button>
         </div>
         <div class="modal-body">
             <div id="imageSelection">
-                <img th:src="@{/img/img_4.png}" class="profile-img" alt="프로필 4" onclick="selectImage(this)">
+                <img src="/images/img_4.png" class="profile-img" alt="프로필 4" onclick="selectImage(this)">
+                <img src="/images/train.png" class="profile-img" alt="프로필 3" onclick="selectImage(this)">
             </div>
         </div>
     </div>
 </div>
-
-<script>
-    let selectedImage = null;
-    let selectedImageSrc = null;
-    function selectImage(imgElement) {
-        if (selectedImage) {
-            selectedImage.classList.remove('selected');
-        }
-
-        imgElement.classList.add('selected');
-        selectedImage = imgElement;
-        selectedImageSrc = imgElement.src;
-
-        document.getElementById('selectedProfile').src = imgElement.src;
-        hideModal();
-    }
-
-    function showModal() {
-        document.getElementById('imageModal').style.display = 'block';
-    }
-
-    function hideModal() {
-        document.getElementById('imageModal').style.display = 'none';
-    }
-
-    document.querySelector('form').addEventListener('submit', function(event) {
-        if (selectedImageSrc) {
-            document.getElementById('imagePath').value = selectedImageSrc;
-        }
-    });
-</script>
-
 </body>
 </html>

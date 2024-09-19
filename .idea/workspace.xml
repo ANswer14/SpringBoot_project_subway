@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e803a93-5a32-4bc2-a6ca-993b5fdb8034" name="변경" comment="zxcvzxcv">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.lyh.frame.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/frame.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/frame.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/classes/java/main/com/lyh/frame/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/classes/java/main/com/lyh/frame/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/user/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/user/register.html" afterDir="false" />
-    </list>
+    <list default="true" id="527ca856-f070-49e5-b9ac-efd4cc38e7f0" name="변경" comment="FIX html, dto, config 수정&#10;&#10;- home.html&#10;- 쓸모없는 &lt;script&gt;태그 삭제&#10;&#10;- register.html&#10;- js 경로 제대로 이어줌 &#10;&#10;- static 경로에 favicon.ico 추가&#10;&#10;- SecurityConfig&#10;- /favicon.ico 경로 추가( 모든 권한 허용)&#10;&#10;- User&#10;- 유저 엔티티에 implements로 UserDetails 상속&#10;- 엔티티와 UserDetails 역할 겸업&#10;&#10;- BoardRepository 생성&#10;&#10;- favicon.ico 생성&#10;- static에 생성&#10;- 브라우저 상단 프로필 역할&#10;&#10;- FavoriteListRepository 생성&#10;&#10;- register.js 생성&#10;- js 파일에 회원가입 js 넣음&#10;&#10;- SubwayStationRepository 생성&#10;&#10;- SubwayTimeRepository 생성&#10;&#10;- SubwayTypeRepository 생성&#10;&#10;- Test 생성&#10;- 개인 테스트 용(나중에 수정될 것)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,27 +18,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/SpringBoot_project_subway/frame">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="frame" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="frame" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="frame" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -71,14 +30,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="JavaScript File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature-registerPage-0909" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,33 +48,28 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;taehoon-200&quot;
+    &quot;assignee&quot;: &quot;ANswer14&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ANswer14/SpringBoot_project_subway.git&quot;,
-    &quot;accountId&quot;: &quot;c8f071bb-d6c0-4253-8f8e-2b17629408f4&quot;
+    &quot;accountId&quot;: &quot;4fb575b4-b1fd-4011-b1b0-6ea08cce1b8e&quot;
   }
 }</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2lrnJZW6IsD5Rg0Ud1TFkGCSdvW" />
+  <component name="ProjectId" id="2loV0vtUqgGP4WUT7D1Ac28Q0pk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.Test.셀렉테스트.executor": "Run",
     "Gradle.frame 빌드.executor": "Run",
-    "JavaScript 디버그.header.html.executor": "Run",
-    "JavaScript 디버그.home.html.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -120,42 +77,79 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.FrameApplication.executor": "Run",
-    "git-widget-placeholder": "feature-mainPage-0911",
+    "git-widget-placeholder": "feature-registerPage-0909",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sdedu/Desktop/git/practice",
+    "last_opened_file_path": "C:/Users/sdedu/Desktop/General/javascript",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "oracle",
       "mysql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "MySQL"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates" />
-      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\img" />
+      <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\css" />
+      <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates\fragments" />
-      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates" />
+      <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static" />
+      <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\images" />
+      <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates" />
+      <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\img" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.FrameApplication">
+    <configuration name="Test.셀렉테스트" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringBoot_project_subway/frame" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.lyh.frame.Test.셀렉테스트&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="FrameApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="com.lyh.frame.main" />
+      <module name="frame.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lyh.frame.FrameApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Test.셀렉테스트" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -168,34 +162,89 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="2e803a93-5a32-4bc2-a6ca-993b5fdb8034" name="변경" comment="" />
-      <created>1725946993639</created>
+      <changelist id="527ca856-f070-49e5-b9ac-efd4cc38e7f0" name="변경" comment="" />
+      <created>1725846197099</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1725946993639</updated>
-      <workItem from="1725946994768" duration="1362000" />
-      <workItem from="1725948395316" duration="31000" />
-      <workItem from="1725948684889" duration="8185000" />
-      <workItem from="1726012288559" duration="21306000" />
-      <workItem from="1726100088772" duration="21123000" />
-      <workItem from="1726702363184" duration="10700000" />
+      <updated>1725846197099</updated>
+      <workItem from="1725846198260" duration="11295000" />
+      <workItem from="1725859694102" duration="9357000" />
+      <workItem from="1725925569677" duration="10152000" />
+      <workItem from="1726015181484" duration="6224000" />
+      <workItem from="1726034941828" duration="8867000" />
+      <workItem from="1726098823453" duration="26223000" />
+      <workItem from="1726703117387" duration="11502000" />
     </task>
-    <task id="LOCAL-00001" summary="zxcvzxcv">
+    <task id="LOCAL-00001" summary="FEAT, REAFACTOR 회원가입 기능뼈대&#10;&#10;- application.properties &#10;- DB명 METROFLOW_DB로 통일&#10;- 서버 포트 8081로 바꿈&#10;&#10;- ddl.sql&#10;- User테이블 / Board테이블 DDL 명시&#10;&#10;- HomeController &#10;- 임의로 홈을 만듬(view) 삭제해도 됨&#10;&#10;- img_4.png 회원가입 시 기본 이미지&#10;&#10;- register.html / register.css&#10;- 회원가입 시 html / css&#10;&#10;- SecurityConfig&#10;- SpringSecurity 설정 파일&#10;- 추후 변경될 가능성 많음&#10;&#10;- User&#10;- 유저 테이블을 매핑하는 엔티티&#10;- 유저의 Role을 갖는 테이블을 외래키를 통한 테이블로 새로 생성(userRole)&#10;&#10;- UserController&#10;- register 페이지로 가는 컨트롤러 생성(goRegisterPage)&#10;- 회원가입 시 진행되는 컨트롤러 생성(Register)&#10;&#10;- UserDAO&#10;- 유저DAO 메소드 생성&#10;- 회원가입 기능 생성&#10;&#10;- UserRegisterForm&#10;- 회원가입용 유저 form 생성&#10;- been validation 적용&#10;&#10;- UserRepository&#10;- 유저 관련 리포지터리(인터페이스) 작성&#10;- findByUserId : 유저의 id로 계정 찾기(Optional) &#10;- findByNickname : 유저의 nickname으로 계정 찾기(Optional)&#10;&#10;- UserService&#10;- 유저 관련 비즈니스 로직 제공&#10;- idDuplicationCheck : 회원가입 시 유저 id 중복 체크&#10;- passwordCheck : 회원가입 시 유저 password가 passwordCheck와 다른지 체크&#10;- nicknameDuplicationCheck : 회원가입 시 유저 닉네임이 중복되는지 체크">
       <option name="closed" value="true" />
-      <created>1726016180441</created>
+      <created>1725955397146</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1726016180441</updated>
+      <updated>1725955397146</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FIX 회원가입 기능 수정 (닉네임 누락 / 비밀번호 인코딩)&#10;&#10;- UserDAO&#10;- 유저 DAO에 회원가입 기느에 setNickname 메소드 추가 / 패스워드 인코더 오토와이어링 &#10;&#10;- register.html&#10;- 이미지 경로 바꿔봄">
+      <option name="closed" value="true" />
+      <created>1725956859706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725956859706</updated>
+    </task>
+    <task id="LOCAL-00003" summary="FIX 엔티티들 추가&#10;- Board&#10;- 보드에 관한 엔티티&#10;&#10;- FavoriteList&#10;- 즐겨찾기에 관한 엔티티&#10;&#10;- register.html&#10;- 7번줄에 css 경로 바꿔봄&#10;&#10;- SubwayStation&#10;- 역에 관한 정보가 담김(id(시퀀스), stationName(역 이름), stationLine(역 이름에 대한 호선)&#10;&#10;- User&#10;- @JoinColumn 속성 수정함(nullable = false 추가 / 이름 바꿔봄">
+      <option name="closed" value="true" />
+      <created>1726039316472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726039316472</updated>
+    </task>
+    <task id="LOCAL-00004" summary="FIX, FEAT 리포지터리 / ddl 수정, 추가&#10;&#10;- application.properties&#10;- static 경로 지정 삭제&#10;&#10;- ddl.sql&#10;- user_role 테이블 ddl 추가&#10;- station 테이블 ddl 추가&#10;- time 테이블 ddl 추가&#10;- type 테이블 ddl 추가&#10;&#10;- FavoriteList.java&#10;- boardNo를 myfavNo로 수정&#10;&#10;- SubwayType.java&#10;&#10;- register.html&#10;- css 경로 수정&#10;&#10;- SecurityConfig.java&#10;- css 반영 가능하게 경로 수정, images도 경로 수정&#10;&#10;- 분야별 Repository 생성&#10;- FavoriteListRepository 생성&#10;- SubwayStationRepository 생성&#10;- SubwayTimeRepository 생성&#10;- SubwayTypeRepository 생성&#10;&#10;- 삭제&#10;- test.jpg 삭제&#10;- test3.html 삭제">
+      <option name="closed" value="true" />
+      <created>1726108393146</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726108393146</updated>
+    </task>
+    <task id="LOCAL-00005" summary="FIX register.html페이지의 css / js 파일로 따로 뺌&#10;&#10;- UserService &#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- UserDAO&#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- UserController&#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- test.js&#10;- test.js 삭제&#10;&#10;- test3.html&#10;- test3.html 삭제">
+      <option name="closed" value="true" />
+      <created>1726130865367</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726130865367</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FIX 기차 사진 추가">
+      <option name="closed" value="true" />
+      <created>1726130896992</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726130896992</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FIX html, dto, config 수정&#10;&#10;- home.html&#10;- 쓸모없는 &lt;script&gt;태그 삭제&#10;&#10;- register.html&#10;- js 경로 제대로 이어줌 &#10;&#10;- static 경로에 favicon.ico 추가&#10;&#10;- SecurityConfig&#10;- /favicon.ico 경로 추가( 모든 권한 허용)&#10;&#10;- User&#10;- 유저 엔티티에 implements로 UserDetails 상속&#10;- 엔티티와 UserDetails 역할 겸업&#10;&#10;- BoardRepository 생성&#10;&#10;- favicon.ico 생성&#10;- static에 생성&#10;- 브라우저 상단 프로필 역할&#10;&#10;- FavoriteListRepository 생성&#10;&#10;- register.js 생성&#10;- js 파일에 회원가입 js 넣음&#10;&#10;- SubwayStationRepository 생성&#10;&#10;- SubwayTimeRepository 생성&#10;&#10;- SubwayTypeRepository 생성&#10;&#10;- Test 생성&#10;- 개인 테스트 용(나중에 수정될 것)">
+      <option name="closed" value="true" />
+      <created>1726710862823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726710862823</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="zxcvzxcv" />
-    <option name="LAST_COMMIT_MESSAGE" value="zxcvzxcv" />
+    <MESSAGE value="FEAT, REAFACTOR 회원가입 기능뼈대&#10;&#10;- application.properties &#10;- DB명 METROFLOW_DB로 통일&#10;- 서버 포트 8081로 바꿈&#10;&#10;- ddl.sql&#10;- User테이블 / Board테이블 DDL 명시&#10;&#10;- HomeController &#10;- 임의로 홈을 만듬(view) 삭제해도 됨&#10;&#10;- img_4.png 회원가입 시 기본 이미지&#10;&#10;- register.html / register.css&#10;- 회원가입 시 html / css&#10;&#10;- SecurityConfig&#10;- SpringSecurity 설정 파일&#10;- 추후 변경될 가능성 많음&#10;&#10;- User&#10;- 유저 테이블을 매핑하는 엔티티&#10;- 유저의 Role을 갖는 테이블을 외래키를 통한 테이블로 새로 생성(userRole)&#10;&#10;- UserController&#10;- register 페이지로 가는 컨트롤러 생성(goRegisterPage)&#10;- 회원가입 시 진행되는 컨트롤러 생성(Register)&#10;&#10;- UserDAO&#10;- 유저DAO 메소드 생성&#10;- 회원가입 기능 생성&#10;&#10;- UserRegisterForm&#10;- 회원가입용 유저 form 생성&#10;- been validation 적용&#10;&#10;- UserRepository&#10;- 유저 관련 리포지터리(인터페이스) 작성&#10;- findByUserId : 유저의 id로 계정 찾기(Optional) &#10;- findByNickname : 유저의 nickname으로 계정 찾기(Optional)&#10;&#10;- UserService&#10;- 유저 관련 비즈니스 로직 제공&#10;- idDuplicationCheck : 회원가입 시 유저 id 중복 체크&#10;- passwordCheck : 회원가입 시 유저 password가 passwordCheck와 다른지 체크&#10;- nicknameDuplicationCheck : 회원가입 시 유저 닉네임이 중복되는지 체크" />
+    <MESSAGE value="FIX 회원가입 기능 수정 (닉네임 누락 / 비밀번호 인코딩)&#10;&#10;- UserDAO&#10;- 유저 DAO에 회원가입 기느에 setNickname 메소드 추가 / 패스워드 인코더 오토와이어링 &#10;&#10;- register.html&#10;- 이미지 경로 바꿔봄" />
+    <MESSAGE value="FIX 엔티티들 추가&#10;- Board&#10;- 보드에 관한 엔티티&#10;&#10;- FavoriteList&#10;- 즐겨찾기에 관한 엔티티&#10;&#10;- register.html&#10;- 7번줄에 css 경로 바꿔봄&#10;&#10;- SubwayStation&#10;- 역에 관한 정보가 담김(id(시퀀스), stationName(역 이름), stationLine(역 이름에 대한 호선)&#10;&#10;- User&#10;- @JoinColumn 속성 수정함(nullable = false 추가 / 이름 바꿔봄" />
+    <MESSAGE value="FIX, FEAT 리포지터리 / ddl 수정, 추가&#10;&#10;- application.properties&#10;- static 경로 지정 삭제&#10;&#10;- ddl.sql&#10;- user_role 테이블 ddl 추가&#10;- station 테이블 ddl 추가&#10;- time 테이블 ddl 추가&#10;- type 테이블 ddl 추가&#10;&#10;- FavoriteList.java&#10;- boardNo를 myfavNo로 수정&#10;&#10;- SubwayType.java&#10;&#10;- register.html&#10;- css 경로 수정&#10;&#10;- SecurityConfig.java&#10;- css 반영 가능하게 경로 수정, images도 경로 수정&#10;&#10;- 분야별 Repository 생성&#10;- FavoriteListRepository 생성&#10;- SubwayStationRepository 생성&#10;- SubwayTimeRepository 생성&#10;- SubwayTypeRepository 생성&#10;&#10;- 삭제&#10;- test.jpg 삭제&#10;- test3.html 삭제" />
+    <MESSAGE value="FIX register.html페이지의 css / js 파일로 따로 뺌&#10;&#10;- UserService &#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- UserDAO&#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- UserController&#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- test.js&#10;- test.js 삭제&#10;&#10;- test3.html&#10;- test3.html 삭제" />
+    <MESSAGE value="FIX 기차 사진 추가" />
+    <MESSAGE value="FIX html, dto, config 수정&#10;&#10;- home.html&#10;- 쓸모없는 &lt;script&gt;태그 삭제&#10;&#10;- register.html&#10;- js 경로 제대로 이어줌 &#10;&#10;- static 경로에 favicon.ico 추가&#10;&#10;- SecurityConfig&#10;- /favicon.ico 경로 추가( 모든 권한 허용)&#10;&#10;- User&#10;- 유저 엔티티에 implements로 UserDetails 상속&#10;- 엔티티와 UserDetails 역할 겸업&#10;&#10;- BoardRepository 생성&#10;&#10;- favicon.ico 생성&#10;- static에 생성&#10;- 브라우저 상단 프로필 역할&#10;&#10;- FavoriteListRepository 생성&#10;&#10;- register.js 생성&#10;- js 파일에 회원가입 js 넣음&#10;&#10;- SubwayStationRepository 생성&#10;&#10;- SubwayTimeRepository 생성&#10;&#10;- SubwayTypeRepository 생성&#10;&#10;- Test 생성&#10;- 개인 테스트 용(나중에 수정될 것)" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX html, dto, config 수정&#10;&#10;- home.html&#10;- 쓸모없는 &lt;script&gt;태그 삭제&#10;&#10;- register.html&#10;- js 경로 제대로 이어줌 &#10;&#10;- static 경로에 favicon.ico 추가&#10;&#10;- SecurityConfig&#10;- /favicon.ico 경로 추가( 모든 권한 허용)&#10;&#10;- User&#10;- 유저 엔티티에 implements로 UserDetails 상속&#10;- 엔티티와 UserDetails 역할 겸업&#10;&#10;- BoardRepository 생성&#10;&#10;- favicon.ico 생성&#10;- static에 생성&#10;- 브라우저 상단 프로필 역할&#10;&#10;- FavoriteListRepository 생성&#10;&#10;- register.js 생성&#10;- js 파일에 회원가입 js 넣음&#10;&#10;- SubwayStationRepository 생성&#10;&#10;- SubwayTimeRepository 생성&#10;&#10;- SubwayTypeRepository 생성&#10;&#10;- Test 생성&#10;- 개인 테스트 용(나중에 수정될 것)" />
   </component>
 </project>
