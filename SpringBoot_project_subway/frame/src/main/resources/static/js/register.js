@@ -1,3 +1,25 @@
+const disableSpacebar = (event) => {
+    if (event.code === "Space") {
+        event.preventDefault();
+    }
+};
+
+// const disableKorean = (event) => {
+//     const re = new RegExp("")
+//     if (event.code)
+// };
+
+window.onload = () => {
+    const inputFields = document.getElementsByTagName("input");
+    Array.from(inputFields).forEach(input => {
+        input.addEventListener('keydown', disableSpacebar);
+    });
+    // Array.from(inputFields).forEach(input => {
+    //     input.addEventListener('keypress', disableKorean);
+    // });
+};
+
+
 let selectedImage = null;
 let selectedImageSrc = null;
 // 예제 사용
@@ -36,4 +58,14 @@ document.querySelector('form').addEventListener('submit', function(event) {
     } else {
         document.getElementById('imagePath').value = 'http://localhost:8081/images/img_4.png'; // 기본값 설정
     }
+
+
+
+    //     id.addEventListener('keypress', function(event) {
+    //     // 입력되는 키 코드가 한글 범위에 해당하는 경우
+    //     const char = String.fromCharCode(event.charCode);
+    //     if (/[\u3131-\uD79D]/.test(char) ||) {
+    //     event.preventDefault(); // 한글 입력 방지
+    // }
+    // });
 });
