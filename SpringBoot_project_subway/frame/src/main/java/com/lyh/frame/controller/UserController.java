@@ -7,7 +7,6 @@ import com.lyh.frame.model.service.UserService;
 import com.lyh.frame.repository.UserRepository;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -46,7 +45,7 @@ public class UserController {
     @GetMapping("/goLogin")
     public String goLoginPage(Model model) {
         model.addAttribute("login", new UserLoginForm());
-        return "login/login";
+        return "user/login";
     }
 
 

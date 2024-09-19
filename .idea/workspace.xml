@@ -4,7 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="527ca856-f070-49e5-b9ac-efd4cc38e7f0" name="변경" comment="FIX html, dto, config 수정&#10;&#10;- home.html&#10;- 쓸모없는 &lt;script&gt;태그 삭제&#10;&#10;- register.html&#10;- js 경로 제대로 이어줌 &#10;&#10;- static 경로에 favicon.ico 추가&#10;&#10;- SecurityConfig&#10;- /favicon.ico 경로 추가( 모든 권한 허용)&#10;&#10;- User&#10;- 유저 엔티티에 implements로 UserDetails 상속&#10;- 엔티티와 UserDetails 역할 겸업&#10;&#10;- BoardRepository 생성&#10;&#10;- favicon.ico 생성&#10;- static에 생성&#10;- 브라우저 상단 프로필 역할&#10;&#10;- FavoriteListRepository 생성&#10;&#10;- register.js 생성&#10;- js 파일에 회원가입 js 넣음&#10;&#10;- SubwayStationRepository 생성&#10;&#10;- SubwayTimeRepository 생성&#10;&#10;- SubwayTypeRepository 생성&#10;&#10;- Test 생성&#10;- 개인 테스트 용(나중에 수정될 것)" />
+    <list default="true" id="527ca856-f070-49e5-b9ac-efd4cc38e7f0" name="변경" comment="FEAT login register 를 menu 에 연결&#10;&#10;login.html&#10;menuBar insert 로 연결&#10;menuBar css 연결&#10;&#10;register.html&#10;menuBar insert 로 연결&#10;menuBar css 연결&#10;&#10;menuBar.css register.css&#10;각 css 에서 불필요한 요소 제거&#10;menuBar 에 필요한 css 병합">
+      <change afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/static/js/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/menu/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/classes/java/main/com/lyh/frame/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/classes/java/main/com/lyh/frame/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/classes/java/main/com/lyh/frame/repository/SubwayStationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/classes/java/main/com/lyh/frame/repository/SubwayStationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/static/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/static/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/static/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/static/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/static/img/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/fragments/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/fragments/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/resources/main/templates/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/tmp/compileJava/compileTransaction/stash-dir/UserController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/repository/SubwayStationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/java/com/lyh/frame/repository/SubwayStationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/static/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/static/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/static/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/static/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/static/img/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/fragments/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/fragments/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot_project_subway/frame/src/main/resources/templates/user/register.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,8 +68,8 @@
       <list>
         <option value="Interface" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,9 +90,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/ANswer14/SpringBoot_project_subway.git&quot;,
-    &quot;accountId&quot;: &quot;4fb575b4-b1fd-4011-b1b0-6ea08cce1b8e&quot;
+    &quot;accountId&quot;: &quot;c8f071bb-d6c0-4253-8f8e-2b17629408f4&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -65,47 +104,51 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.Test.셀렉테스트.executor": "Run",
-    "Gradle.frame 빌드.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.FrameApplication.executor": "Run",
-    "git-widget-placeholder": "feature-registerPage-0909",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sdedu/Desktop/General/javascript",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor.code.editing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Test.셀렉테스트.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.frame 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.FrameApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature-mainPage-0911&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sdedu/Downloads/main_page_9월23일(css 수정)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\images" />
+      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\img" />
       <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\css" />
       <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sdedu\Desktop\git\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates\user" />
       <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static" />
       <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\static\images" />
       <recent name="C:\Users\sdedu\Desktop\General\Springboot\SpringBoot_project_subway\SpringBoot_project_subway\frame\src\main\resources\templates" />
@@ -139,12 +182,16 @@
     </configuration>
     <configuration name="FrameApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="frame.main" />
+      <module name="com.lyh.frame.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lyh.frame.FrameApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.Test.셀렉테스트" />
+      <item itemvalue="Spring Boot.FrameApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Test.셀렉테스트" />
@@ -174,6 +221,10 @@
       <workItem from="1726034941828" duration="8867000" />
       <workItem from="1726098823453" duration="26223000" />
       <workItem from="1726703117387" duration="11502000" />
+      <workItem from="1727050678423" duration="19780000" />
+      <workItem from="1727136626978" duration="13980000" />
+      <workItem from="1727223017041" duration="24096000" />
+      <workItem from="1727395567318" duration="432000" />
     </task>
     <task id="LOCAL-00001" summary="FEAT, REAFACTOR 회원가입 기능뼈대&#10;&#10;- application.properties &#10;- DB명 METROFLOW_DB로 통일&#10;- 서버 포트 8081로 바꿈&#10;&#10;- ddl.sql&#10;- User테이블 / Board테이블 DDL 명시&#10;&#10;- HomeController &#10;- 임의로 홈을 만듬(view) 삭제해도 됨&#10;&#10;- img_4.png 회원가입 시 기본 이미지&#10;&#10;- register.html / register.css&#10;- 회원가입 시 html / css&#10;&#10;- SecurityConfig&#10;- SpringSecurity 설정 파일&#10;- 추후 변경될 가능성 많음&#10;&#10;- User&#10;- 유저 테이블을 매핑하는 엔티티&#10;- 유저의 Role을 갖는 테이블을 외래키를 통한 테이블로 새로 생성(userRole)&#10;&#10;- UserController&#10;- register 페이지로 가는 컨트롤러 생성(goRegisterPage)&#10;- 회원가입 시 진행되는 컨트롤러 생성(Register)&#10;&#10;- UserDAO&#10;- 유저DAO 메소드 생성&#10;- 회원가입 기능 생성&#10;&#10;- UserRegisterForm&#10;- 회원가입용 유저 form 생성&#10;- been validation 적용&#10;&#10;- UserRepository&#10;- 유저 관련 리포지터리(인터페이스) 작성&#10;- findByUserId : 유저의 id로 계정 찾기(Optional) &#10;- findByNickname : 유저의 nickname으로 계정 찾기(Optional)&#10;&#10;- UserService&#10;- 유저 관련 비즈니스 로직 제공&#10;- idDuplicationCheck : 회원가입 시 유저 id 중복 체크&#10;- passwordCheck : 회원가입 시 유저 password가 passwordCheck와 다른지 체크&#10;- nicknameDuplicationCheck : 회원가입 시 유저 닉네임이 중복되는지 체크">
       <option name="closed" value="true" />
@@ -231,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726710862823</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FEAT login register 를 menu 에 연결&#10;&#10;login.html&#10;menuBar insert 로 연결&#10;menuBar css 연결&#10;&#10;register.html&#10;menuBar insert 로 연결&#10;menuBar css 연결&#10;&#10;menuBar.css register.css&#10;각 css 에서 불필요한 요소 제거&#10;menuBar 에 필요한 css 병합">
+      <option name="closed" value="true" />
+      <created>1726727951052</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1726727951052</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +304,8 @@
     <MESSAGE value="FIX register.html페이지의 css / js 파일로 따로 뺌&#10;&#10;- UserService &#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- UserDAO&#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- UserController&#10;- 어노테이션 @RequiredArgConstructor 사용&#10;&#10;- test.js&#10;- test.js 삭제&#10;&#10;- test3.html&#10;- test3.html 삭제" />
     <MESSAGE value="FIX 기차 사진 추가" />
     <MESSAGE value="FIX html, dto, config 수정&#10;&#10;- home.html&#10;- 쓸모없는 &lt;script&gt;태그 삭제&#10;&#10;- register.html&#10;- js 경로 제대로 이어줌 &#10;&#10;- static 경로에 favicon.ico 추가&#10;&#10;- SecurityConfig&#10;- /favicon.ico 경로 추가( 모든 권한 허용)&#10;&#10;- User&#10;- 유저 엔티티에 implements로 UserDetails 상속&#10;- 엔티티와 UserDetails 역할 겸업&#10;&#10;- BoardRepository 생성&#10;&#10;- favicon.ico 생성&#10;- static에 생성&#10;- 브라우저 상단 프로필 역할&#10;&#10;- FavoriteListRepository 생성&#10;&#10;- register.js 생성&#10;- js 파일에 회원가입 js 넣음&#10;&#10;- SubwayStationRepository 생성&#10;&#10;- SubwayTimeRepository 생성&#10;&#10;- SubwayTypeRepository 생성&#10;&#10;- Test 생성&#10;- 개인 테스트 용(나중에 수정될 것)" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX html, dto, config 수정&#10;&#10;- home.html&#10;- 쓸모없는 &lt;script&gt;태그 삭제&#10;&#10;- register.html&#10;- js 경로 제대로 이어줌 &#10;&#10;- static 경로에 favicon.ico 추가&#10;&#10;- SecurityConfig&#10;- /favicon.ico 경로 추가( 모든 권한 허용)&#10;&#10;- User&#10;- 유저 엔티티에 implements로 UserDetails 상속&#10;- 엔티티와 UserDetails 역할 겸업&#10;&#10;- BoardRepository 생성&#10;&#10;- favicon.ico 생성&#10;- static에 생성&#10;- 브라우저 상단 프로필 역할&#10;&#10;- FavoriteListRepository 생성&#10;&#10;- register.js 생성&#10;- js 파일에 회원가입 js 넣음&#10;&#10;- SubwayStationRepository 생성&#10;&#10;- SubwayTimeRepository 생성&#10;&#10;- SubwayTypeRepository 생성&#10;&#10;- Test 생성&#10;- 개인 테스트 용(나중에 수정될 것)" />
+    <MESSAGE value="FEAT menubar home 생성&#10;&#10;home.html&#10;메인 페이지 view 구현&#10;&#10;menu.html&#10;menubar의 형태&#10;각 페이지 연결에 활용할 a태그 포함" />
+    <MESSAGE value="FEAT login register 를 menu 에 연결&#10;&#10;login.html&#10;menuBar insert 로 연결&#10;menuBar css 연결&#10;&#10;register.html&#10;menuBar insert 로 연결&#10;menuBar css 연결&#10;&#10;menuBar.css register.css&#10;각 css 에서 불필요한 요소 제거&#10;menuBar 에 필요한 css 병합" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT login register 를 menu 에 연결&#10;&#10;login.html&#10;menuBar insert 로 연결&#10;menuBar css 연결&#10;&#10;register.html&#10;menuBar insert 로 연결&#10;menuBar css 연결&#10;&#10;menuBar.css register.css&#10;각 css 에서 불필요한 요소 제거&#10;menuBar 에 필요한 css 병합" />
   </component>
 </project>

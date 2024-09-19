@@ -20,7 +20,8 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorize -> authorize
 //                        필요할 시 아래 경로 바꿀 것
-                                .requestMatchers("/","/favicon.ico","/css/**", "/images/**","/js/**","/test", "/home", "/login", "/register", "/goRegister", "/goLogin").permitAll()
+                                .requestMatchers("/","/favicon.ico","/css/**", "/images/**","/js/**","/test", "/home",
+                                        "/login", "/register", "/goRegister", "/goLogin", "/search", "/goSearch", "/goSearch/stations").permitAll()
 //                                .requestMatchers("/user-list").hasAuthority("admin")
 //                        .requestMatchers("/user/**").hasRole("user")
                                 .anyRequest().authenticated()

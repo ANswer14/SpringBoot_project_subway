@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link href="/css/register.css" rel="stylesheet">
-<!--    <link rel = "icon" href="data:,">-->
+    <link href="/css/menu.css" rel="stylesheet">
     <script type="text/javascript" src="/js/register.js"></script>
+    <link href="/css/register.css" rel="stylesheet">
 </head>
 <body>
 
+<div th:insert="~{fragments/menu :: menuBar}"></div>
 
 <!-- 회원가입 폼 -->
 <div class="form-container">
@@ -70,5 +71,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

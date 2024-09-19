@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>역검색</title>
+    <link href="/css/menu.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div th:insert="~{fragments/menu :: menuBar}"></div>
+
+    <div>
+        <form action="?src=">
+            <label>
+                <input id="searchInput" type="text" placeholder="검색할 역이름을 입력하세요">
+                <button id="searchButton" type="button" >검색</button>
+            </label>
+            <ul id="stationList"></ul>
+        </form>
+    </div>
+
+</body>
+<script type="text/javascript" src="/js/search.js"></script>
+</html>
