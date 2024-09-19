@@ -4,7 +4,9 @@ import com.lyh.frame.model.dao.UserDAO;
 import com.lyh.frame.model.dto.User;
 import com.lyh.frame.model.dto.UserRegisterForm;
 import com.lyh.frame.model.service.UserService;
+import com.lyh.frame.repository.UserRepository;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,16 +17,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequiredArgsConstructor
 public class UserController {
 
     private final UserDAO USERDAO;
     private final UserService USERSERVICE;
-
-    @Autowired
-    public UserController(UserDAO USERDAO, UserService USERSERVICE) {
-        this.USERDAO = USERDAO;
-        this.USERSERVICE = USERSERVICE;
-    }
+    private final UserRepository USERREPOSITORY;
 
     @GetMapping("/goRegister")
     public String goRegisterPage(Model model) {
@@ -33,14 +31,16 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public String Register(@Valid @ModelAttribute("user")UserRegisterForm user, BindingResult result) {
+    public String Register(@Valid @ModelAttribute("user")UserRegisterForm user, BindingResult result,
+                           @RequestParam("imagePath") String imagePath) {
         USERSERVICE.idDuplicationCheck(user, result);
         USERSERVICE.passwordCheck(user, result);
         USERSERVICE.nicknameDuplicationCheck(user, result);
         if (result.hasErrors()) {
             return "user/register";
         }
-        USERDAO.register(user);
+        USERDAO.register(user, imagePath);
         return "home";
     }
+
 }
